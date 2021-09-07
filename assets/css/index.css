@@ -134,36 +134,6 @@ h2{
 .sec-two, .first-two{
     margin-bottom: 0;
 }
-@media only screen and (max-width: 2560px) and (min-width: 1440px){
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    h2{
-        font-size: 2.5em;
-    }
-    h1{
-        font-size: 3em;
-    }
-    section{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .container{
-        /* width: 52%; */
-        /* justify-content: space-around; */
-        font-size: 1.7em;
-    }
-    p{
-        font-size: 1.7em;
-    }
-    span{
-        font-size:1.3em;
-    }
-    .programming-proficiency{
-        margin-top: 5em;
-    }
-}
 @media only screen and (max-width: 768px){
     section{
         flex-direction: column;
@@ -173,9 +143,31 @@ h2{
     .container{
         /* width: 20em; */
         flex-direction: column;
+        word-break: break-all;
     }
     header .container ul{
         padding-left: 2em !important;
+    }
+    p{
+        width: 100vw !important;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        flex-direction: column;
+        word-break: break-all;
+    }
+    .container ul{
+        padding-left: 2em !important;
+    }
+    p{
+        width: 100%;
     }
 }
 @media only screen and (min-width: 1440px) and (max-width: 2560px) {
